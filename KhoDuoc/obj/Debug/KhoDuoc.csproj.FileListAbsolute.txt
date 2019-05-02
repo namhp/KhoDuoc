@@ -1,0 +1,13 @@
+C:\Users\phong\source\repos\KhoDuoc\KhoDuoc\bin\Debug\KhoDuoc.exe.config
+C:\Users\phong\source\repos\KhoDuoc\KhoDuoc\bin\Debug\KhoDuoc.exe
+C:\Users\phong\source\repos\KhoDuoc\KhoDuoc\bin\Debug\KhoDuoc.pdb
+C:\Users\phong\source\repos\KhoDuoc\KhoDuoc\obj\Debug\KhoDuoc.csprojAssemblyReference.cache
+C:\Users\phong\source\repos\KhoDuoc\KhoDuoc\obj\Debug\KhoDuoc.LoginForm.resources
+C:\Users\phong\source\repos\KhoDuoc\KhoDuoc\obj\Debug\KhoDuoc.Properties.Resources.resources
+C:\Users\phong\source\repos\KhoDuoc\KhoDuoc\obj\Debug\KhoDuoc.csproj.GenerateResource.cache
+C:\Users\phong\source\repos\KhoDuoc\KhoDuoc\obj\Debug\KhoDuoc.csproj.CoreCompileInputs.cache
+C:\Users\phong\source\repos\KhoDuoc\KhoDuoc\obj\Debug\KhoDuoc.exe
+C:\Users\phong\source\repos\KhoDuoc\KhoDuoc\obj\Debug\KhoDuoc.pdb
+C:\Users\phong\source\repos\KhoDuoc\KhoDuoc\obj\Debug\KhoDuoc.AdminF.resources
+C:\Users\phong\source\repos\KhoDuoc\KhoDuoc\obj\Debug\KhoDuoc.CRUDTaiKhoan.resources
+C:\Users\phong\source\repos\KhoDuoc\KhoDuoc\obj\Debug\KhoDuoc.CRUDNV.resources

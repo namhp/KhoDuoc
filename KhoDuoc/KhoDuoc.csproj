@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FB0E448B-DF46-4048-9333-0253E995104D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>KhoDuoc</RootNamespace>
+    <AssemblyName>KhoDuoc</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\AdminF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminF.Designer.cs">
+      <DependentUpon>AdminF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChucNangF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChucNangF.Designer.cs">
+      <DependentUpon>ChucNangF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Connection.cs" />
+    <Compile Include="Admin\CRUDNCC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\CRUDNCC.Designer.cs">
+      <DependentUpon>CRUDNCC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\CRUDNV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\CRUDNV.Designer.cs">
+      <DependentUpon>CRUDNV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\CRUDTaiKhoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\CRUDTaiKhoan.Designer.cs">
+      <DependentUpon>CRUDTaiKhoan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\CRUDThuoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\CRUDThuoc.Designer.cs">
+      <DependentUpon>CRUDThuoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DuocF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DuocF.Designer.cs">
+      <DependentUpon>DuocF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KhoDuocDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KhoDuocDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PhieuNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PhieuNhap.Designer.cs">
+      <DependentUpon>PhieuNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PhieuTon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PhieuTon.Designer.cs">
+      <DependentUpon>PhieuTon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PhieuXuat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PhieuXuat.Designer.cs">
+      <DependentUpon>PhieuXuat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Admin\AdminF.resx">
+      <DependentUpon>AdminF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\CRUDTaiKhoan.resx">
+      <DependentUpon>CRUDTaiKhoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\CRUDNV.resx">
+      <DependentUpon>CRUDNV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\CRUDNCC.resx">
+      <DependentUpon>CRUDNCC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\CRUDThuoc.resx">
+      <DependentUpon>CRUDThuoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChucNangF.resx">
+      <DependentUpon>ChucNangF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="KhoDuocDataSet.xsc">
+      <DependentUpon>KhoDuocDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="KhoDuocDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KhoDuocDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="KhoDuocDataSet.xss">
+      <DependentUpon>KhoDuocDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

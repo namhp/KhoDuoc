@@ -63,6 +63,8 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -75,6 +77,7 @@
             this.dataGridView1.DataSource = this.thuocBindingSource;
             this.dataGridView1.Location = new System.Drawing.Point(19, 167);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(738, 191);
             this.dataGridView1.TabIndex = 0;
             // 
@@ -83,12 +86,14 @@
             this.mathuocDataGridViewTextBoxColumn.DataPropertyName = "mathuoc";
             this.mathuocDataGridViewTextBoxColumn.HeaderText = "Mã thuốc";
             this.mathuocDataGridViewTextBoxColumn.Name = "mathuocDataGridViewTextBoxColumn";
+            this.mathuocDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // tenthuocDataGridViewTextBoxColumn
             // 
             this.tenthuocDataGridViewTextBoxColumn.DataPropertyName = "tenthuoc";
             this.tenthuocDataGridViewTextBoxColumn.HeaderText = "Tên thuốc";
             this.tenthuocDataGridViewTextBoxColumn.Name = "tenthuocDataGridViewTextBoxColumn";
+            this.tenthuocDataGridViewTextBoxColumn.ReadOnly = true;
             this.tenthuocDataGridViewTextBoxColumn.Width = 130;
             // 
             // ndhlDataGridViewTextBoxColumn
@@ -96,6 +101,7 @@
             this.ndhlDataGridViewTextBoxColumn.DataPropertyName = "ndhl";
             this.ndhlDataGridViewTextBoxColumn.HeaderText = "Nồng độ, hàm lượng";
             this.ndhlDataGridViewTextBoxColumn.Name = "ndhlDataGridViewTextBoxColumn";
+            this.ndhlDataGridViewTextBoxColumn.ReadOnly = true;
             this.ndhlDataGridViewTextBoxColumn.Width = 150;
             // 
             // sdkgpdkDataGridViewTextBoxColumn
@@ -103,18 +109,21 @@
             this.sdkgpdkDataGridViewTextBoxColumn.DataPropertyName = "sdkgpdk";
             this.sdkgpdkDataGridViewTextBoxColumn.HeaderText = "Số đăng ký";
             this.sdkgpdkDataGridViewTextBoxColumn.Name = "sdkgpdkDataGridViewTextBoxColumn";
+            this.sdkgpdkDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // noisxDataGridViewTextBoxColumn
             // 
             this.noisxDataGridViewTextBoxColumn.DataPropertyName = "noisx";
             this.noisxDataGridViewTextBoxColumn.HeaderText = "Nơi sản xuất";
             this.noisxDataGridViewTextBoxColumn.Name = "noisxDataGridViewTextBoxColumn";
+            this.noisxDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // dvtDataGridViewTextBoxColumn
             // 
             this.dvtDataGridViewTextBoxColumn.DataPropertyName = "dvt";
             this.dvtDataGridViewTextBoxColumn.HeaderText = "Đơn vị tính";
             this.dvtDataGridViewTextBoxColumn.Name = "dvtDataGridViewTextBoxColumn";
+            this.dvtDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // thuocBindingSource
             // 
@@ -318,7 +327,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridView1);
             this.Name = "CRUDThuoc";
-            this.Text = "CRUDThuoc";
+            this.Text = "Quản lý thuốc";
             this.Load += new System.EventHandler(this.CRUDThuoc_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.thuocBindingSource)).EndInit();

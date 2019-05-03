@@ -11,3 +11,17 @@ C:\Users\phong\source\repos\KhoDuoc\KhoDuoc\obj\Debug\KhoDuoc.pdb
 C:\Users\phong\source\repos\KhoDuoc\KhoDuoc\obj\Debug\KhoDuoc.AdminF.resources
 C:\Users\phong\source\repos\KhoDuoc\KhoDuoc\obj\Debug\KhoDuoc.CRUDTaiKhoan.resources
 C:\Users\phong\source\repos\KhoDuoc\KhoDuoc\obj\Debug\KhoDuoc.CRUDNV.resources
+D:\GitHub\KhoDuoc\KhoDuoc\obj\Debug\KhoDuoc.csprojAssemblyReference.cache
+D:\GitHub\KhoDuoc\KhoDuoc\obj\Debug\KhoDuoc.AdminF.resources
+D:\GitHub\KhoDuoc\KhoDuoc\obj\Debug\KhoDuoc.CRUDTaiKhoan.resources
+D:\GitHub\KhoDuoc\KhoDuoc\obj\Debug\KhoDuoc.CRUDNV.resources
+D:\GitHub\KhoDuoc\KhoDuoc\obj\Debug\KhoDuoc.CRUDNCC.resources
+D:\GitHub\KhoDuoc\KhoDuoc\obj\Debug\KhoDuoc.CRUDThuoc.resources
+D:\GitHub\KhoDuoc\KhoDuoc\obj\Debug\KhoDuoc.ChucNangF.resources
+D:\GitHub\KhoDuoc\KhoDuoc\obj\Debug\KhoDuoc.DanhSachThuocF.resources
+D:\GitHub\KhoDuoc\KhoDuoc\obj\Debug\KhoDuoc.LoginForm.resources
+D:\GitHub\KhoDuoc\KhoDuoc\obj\Debug\KhoDuoc.Properties.Resources.resources
+D:\GitHub\KhoDuoc\KhoDuoc\obj\Debug\KhoDuoc.csproj.GenerateResource.cache
+D:\GitHub\KhoDuoc\KhoDuoc\obj\Debug\KhoDuoc.csproj.CoreCompileInputs.cache
+D:\GitHub\KhoDuoc\KhoDuoc\obj\Debug\KhoDuoc.exe
+D:\GitHub\KhoDuoc\KhoDuoc\obj\Debug\KhoDuoc.pdb

@@ -30,8 +30,15 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.khoDuocDataSet = new KhoDuoc.KhoDuocDataSet();
+            this.manccDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tennccDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sdtDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.diachiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.faxDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sotkDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.mstDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nCungCapBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.khoDuocDataSet = new KhoDuoc.KhoDuocDataSet();
             this.nCungCapTableAdapter = new KhoDuoc.KhoDuocDataSetTableAdapters.nCungCapTableAdapter();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
@@ -52,16 +59,9 @@
             this.label4 = new System.Windows.Forms.Label();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.manccDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tennccDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.sdtDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.diachiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.faxDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.sotkDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.mstDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.khoDuocDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nCungCapBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.khoDuocDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -85,15 +85,67 @@
             this.dataGridView1.Size = new System.Drawing.Size(747, 228);
             this.dataGridView1.TabIndex = 0;
             // 
-            // khoDuocDataSet
+            // manccDataGridViewTextBoxColumn
             // 
-            this.khoDuocDataSet.DataSetName = "KhoDuocDataSet";
-            this.khoDuocDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.manccDataGridViewTextBoxColumn.DataPropertyName = "mancc";
+            this.manccDataGridViewTextBoxColumn.HeaderText = "Mã số";
+            this.manccDataGridViewTextBoxColumn.Name = "manccDataGridViewTextBoxColumn";
+            this.manccDataGridViewTextBoxColumn.ReadOnly = true;
+            this.manccDataGridViewTextBoxColumn.Width = 70;
+            // 
+            // tennccDataGridViewTextBoxColumn
+            // 
+            this.tennccDataGridViewTextBoxColumn.DataPropertyName = "tenncc";
+            this.tennccDataGridViewTextBoxColumn.HeaderText = "Nhà cung cấp";
+            this.tennccDataGridViewTextBoxColumn.Name = "tennccDataGridViewTextBoxColumn";
+            this.tennccDataGridViewTextBoxColumn.ReadOnly = true;
+            this.tennccDataGridViewTextBoxColumn.Width = 180;
+            // 
+            // sdtDataGridViewTextBoxColumn
+            // 
+            this.sdtDataGridViewTextBoxColumn.DataPropertyName = "sdt";
+            this.sdtDataGridViewTextBoxColumn.HeaderText = "Số điện thoại";
+            this.sdtDataGridViewTextBoxColumn.Name = "sdtDataGridViewTextBoxColumn";
+            this.sdtDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // diachiDataGridViewTextBoxColumn
+            // 
+            this.diachiDataGridViewTextBoxColumn.DataPropertyName = "diachi";
+            this.diachiDataGridViewTextBoxColumn.HeaderText = "Địa chỉ";
+            this.diachiDataGridViewTextBoxColumn.Name = "diachiDataGridViewTextBoxColumn";
+            this.diachiDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // faxDataGridViewTextBoxColumn
+            // 
+            this.faxDataGridViewTextBoxColumn.DataPropertyName = "fax";
+            this.faxDataGridViewTextBoxColumn.HeaderText = "Fax";
+            this.faxDataGridViewTextBoxColumn.Name = "faxDataGridViewTextBoxColumn";
+            this.faxDataGridViewTextBoxColumn.ReadOnly = true;
+            this.faxDataGridViewTextBoxColumn.Width = 50;
+            // 
+            // sotkDataGridViewTextBoxColumn
+            // 
+            this.sotkDataGridViewTextBoxColumn.DataPropertyName = "sotk";
+            this.sotkDataGridViewTextBoxColumn.HeaderText = "Số tài khoản";
+            this.sotkDataGridViewTextBoxColumn.Name = "sotkDataGridViewTextBoxColumn";
+            this.sotkDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // mstDataGridViewTextBoxColumn
+            // 
+            this.mstDataGridViewTextBoxColumn.DataPropertyName = "mst";
+            this.mstDataGridViewTextBoxColumn.HeaderText = "Mã số thuế";
+            this.mstDataGridViewTextBoxColumn.Name = "mstDataGridViewTextBoxColumn";
+            this.mstDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // nCungCapBindingSource
             // 
             this.nCungCapBindingSource.DataMember = "nCungCap";
             this.nCungCapBindingSource.DataSource = this.khoDuocDataSet;
+            // 
+            // khoDuocDataSet
+            // 
+            this.khoDuocDataSet.DataSetName = "KhoDuocDataSet";
+            this.khoDuocDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // nCungCapTableAdapter
             // 
@@ -282,58 +334,6 @@
             this.label7.TabIndex = 45;
             this.label7.Text = "Địa chỉ";
             // 
-            // manccDataGridViewTextBoxColumn
-            // 
-            this.manccDataGridViewTextBoxColumn.DataPropertyName = "mancc";
-            this.manccDataGridViewTextBoxColumn.HeaderText = "Mã số";
-            this.manccDataGridViewTextBoxColumn.Name = "manccDataGridViewTextBoxColumn";
-            this.manccDataGridViewTextBoxColumn.ReadOnly = true;
-            this.manccDataGridViewTextBoxColumn.Width = 70;
-            // 
-            // tennccDataGridViewTextBoxColumn
-            // 
-            this.tennccDataGridViewTextBoxColumn.DataPropertyName = "tenncc";
-            this.tennccDataGridViewTextBoxColumn.HeaderText = "Nhà cung cấp";
-            this.tennccDataGridViewTextBoxColumn.Name = "tennccDataGridViewTextBoxColumn";
-            this.tennccDataGridViewTextBoxColumn.ReadOnly = true;
-            this.tennccDataGridViewTextBoxColumn.Width = 180;
-            // 
-            // sdtDataGridViewTextBoxColumn
-            // 
-            this.sdtDataGridViewTextBoxColumn.DataPropertyName = "sdt";
-            this.sdtDataGridViewTextBoxColumn.HeaderText = "Số điện thoại";
-            this.sdtDataGridViewTextBoxColumn.Name = "sdtDataGridViewTextBoxColumn";
-            this.sdtDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // diachiDataGridViewTextBoxColumn
-            // 
-            this.diachiDataGridViewTextBoxColumn.DataPropertyName = "diachi";
-            this.diachiDataGridViewTextBoxColumn.HeaderText = "Địa chỉ";
-            this.diachiDataGridViewTextBoxColumn.Name = "diachiDataGridViewTextBoxColumn";
-            this.diachiDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // faxDataGridViewTextBoxColumn
-            // 
-            this.faxDataGridViewTextBoxColumn.DataPropertyName = "fax";
-            this.faxDataGridViewTextBoxColumn.HeaderText = "Fax";
-            this.faxDataGridViewTextBoxColumn.Name = "faxDataGridViewTextBoxColumn";
-            this.faxDataGridViewTextBoxColumn.ReadOnly = true;
-            this.faxDataGridViewTextBoxColumn.Width = 50;
-            // 
-            // sotkDataGridViewTextBoxColumn
-            // 
-            this.sotkDataGridViewTextBoxColumn.DataPropertyName = "sotk";
-            this.sotkDataGridViewTextBoxColumn.HeaderText = "Số tài khoản";
-            this.sotkDataGridViewTextBoxColumn.Name = "sotkDataGridViewTextBoxColumn";
-            this.sotkDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // mstDataGridViewTextBoxColumn
-            // 
-            this.mstDataGridViewTextBoxColumn.DataPropertyName = "mst";
-            this.mstDataGridViewTextBoxColumn.HeaderText = "Mã số thuế";
-            this.mstDataGridViewTextBoxColumn.Name = "mstDataGridViewTextBoxColumn";
-            this.mstDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
             // CRUDNCC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -360,11 +360,11 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridView1);
             this.Name = "CRUDNCC";
-            this.Text = "CRUDNCC";
+            this.Text = "Quản lý nhà cung cấp";
             this.Load += new System.EventHandler(this.CRUDNCC_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.khoDuocDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nCungCapBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.khoDuocDataSet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

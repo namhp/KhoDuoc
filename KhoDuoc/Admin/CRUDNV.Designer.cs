@@ -45,8 +45,8 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.khoDuocDataSet = new KhoDuoc.KhoDuocDataSet();
             this.nhanVienBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.khoDuocDataSet = new KhoDuoc.KhoDuocDataSet();
             this.nhanVienTableAdapter = new KhoDuoc.KhoDuocDataSetTableAdapters.nhanVienTableAdapter();
             this.manvDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tennvDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -54,8 +54,8 @@
             this.usernameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.khoaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.khoDuocDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nhanVienBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.khoDuocDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // button5
@@ -196,6 +196,7 @@
             // dataGridView1
             // 
             this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -211,15 +212,15 @@
             this.dataGridView1.Size = new System.Drawing.Size(726, 211);
             this.dataGridView1.TabIndex = 28;
             // 
-            // khoDuocDataSet
-            // 
-            this.khoDuocDataSet.DataSetName = "KhoDuocDataSet";
-            this.khoDuocDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // nhanVienBindingSource
             // 
             this.nhanVienBindingSource.DataMember = "nhanVien";
             this.nhanVienBindingSource.DataSource = this.khoDuocDataSet;
+            // 
+            // khoDuocDataSet
+            // 
+            this.khoDuocDataSet.DataSetName = "KhoDuocDataSet";
+            this.khoDuocDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // nhanVienTableAdapter
             // 
@@ -228,35 +229,37 @@
             // manvDataGridViewTextBoxColumn
             // 
             this.manvDataGridViewTextBoxColumn.DataPropertyName = "manv";
-            this.manvDataGridViewTextBoxColumn.HeaderText = "manv";
+            this.manvDataGridViewTextBoxColumn.HeaderText = "Mã nhân viên";
             this.manvDataGridViewTextBoxColumn.Name = "manvDataGridViewTextBoxColumn";
             this.manvDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // tennvDataGridViewTextBoxColumn
             // 
             this.tennvDataGridViewTextBoxColumn.DataPropertyName = "tennv";
-            this.tennvDataGridViewTextBoxColumn.HeaderText = "tennv";
+            this.tennvDataGridViewTextBoxColumn.HeaderText = "Họ tên";
             this.tennvDataGridViewTextBoxColumn.Name = "tennvDataGridViewTextBoxColumn";
             this.tennvDataGridViewTextBoxColumn.ReadOnly = true;
+            this.tennvDataGridViewTextBoxColumn.Width = 200;
             // 
             // sdtDataGridViewTextBoxColumn
             // 
             this.sdtDataGridViewTextBoxColumn.DataPropertyName = "sdt";
-            this.sdtDataGridViewTextBoxColumn.HeaderText = "sdt";
+            this.sdtDataGridViewTextBoxColumn.HeaderText = "Số điện thoại";
             this.sdtDataGridViewTextBoxColumn.Name = "sdtDataGridViewTextBoxColumn";
             this.sdtDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // usernameDataGridViewTextBoxColumn
             // 
             this.usernameDataGridViewTextBoxColumn.DataPropertyName = "username";
-            this.usernameDataGridViewTextBoxColumn.HeaderText = "username";
+            this.usernameDataGridViewTextBoxColumn.HeaderText = "Tài khoản";
             this.usernameDataGridViewTextBoxColumn.Name = "usernameDataGridViewTextBoxColumn";
             this.usernameDataGridViewTextBoxColumn.ReadOnly = true;
+            this.usernameDataGridViewTextBoxColumn.Width = 150;
             // 
             // khoaDataGridViewTextBoxColumn
             // 
             this.khoaDataGridViewTextBoxColumn.DataPropertyName = "khoa";
-            this.khoaDataGridViewTextBoxColumn.HeaderText = "khoa";
+            this.khoaDataGridViewTextBoxColumn.HeaderText = "Khoa viện";
             this.khoaDataGridViewTextBoxColumn.Name = "khoaDataGridViewTextBoxColumn";
             this.khoaDataGridViewTextBoxColumn.ReadOnly = true;
             // 
@@ -282,11 +285,11 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Name = "CRUDNV";
-            this.Text = "CRUDNV";
+            this.Text = "Quản lý nhân viên";
             this.Load += new System.EventHandler(this.CRUDNV_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.khoDuocDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nhanVienBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.khoDuocDataSet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

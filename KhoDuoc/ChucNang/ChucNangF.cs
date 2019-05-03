@@ -16,5 +16,17 @@ namespace KhoDuoc
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            GuiPhieuLinhF f = new GuiPhieuLinhF();
+            f.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            DanhSachThuocF ff = new GuiPhieuLinhF();
+            ff.Show();
+        }
     }
 }

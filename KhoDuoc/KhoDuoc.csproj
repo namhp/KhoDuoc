@@ -52,13 +52,36 @@
     <Compile Include="Admin\AdminF.Designer.cs">
       <DependentUpon>AdminF.cs</DependentUpon>
     </Compile>
-    <Compile Include="ChucNangF.cs">
+    <Compile Include="CapNhatChiTietLinhF.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ChucNangF.Designer.cs">
+    <Compile Include="CapNhatChiTietLinhF.Designer.cs">
+      <DependentUpon>CapNhatChiTietLinhF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Duoc\ChiTietNhapF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Duoc\ChiTietNhapF.Designer.cs">
+      <DependentUpon>ChiTietNhapF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Duoc\ChiTietXuatF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Duoc\ChiTietXuatF.Designer.cs">
+      <DependentUpon>ChiTietXuatF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChucNang\ChiTietLinhF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChucNang\ChiTietLinhF.Designer.cs">
+      <DependentUpon>ChiTietLinhF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChucNang\ChucNangF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChucNang\ChucNangF.Designer.cs">
       <DependentUpon>ChucNangF.cs</DependentUpon>
     </Compile>
-    <Compile Include="Connection.cs" />
     <Compile Include="Admin\CRUDNCC.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,11 +106,23 @@
     <Compile Include="Admin\CRUDThuoc.Designer.cs">
       <DependentUpon>CRUDThuoc.cs</DependentUpon>
     </Compile>
-    <Compile Include="DuocF.cs">
+    <Compile Include="DanhSachThuocF.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DuocF.Designer.cs">
+    <Compile Include="DanhSachThuocF.Designer.cs">
+      <DependentUpon>DanhSachThuocF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Duoc\DuocF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Duoc\DuocF.Designer.cs">
       <DependentUpon>DuocF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChucNang\GuiPhieuLinhF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChucNang\GuiPhieuLinhF.Designer.cs">
+      <DependentUpon>GuiPhieuLinhF.cs</DependentUpon>
     </Compile>
     <Compile Include="KhoDuocDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -100,23 +135,29 @@
     <Compile Include="LoginForm.Designer.cs">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="PhieuNhap.cs">
+    <Compile Include="Duoc\PhieuLinhF.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PhieuNhap.Designer.cs">
-      <DependentUpon>PhieuNhap.cs</DependentUpon>
+    <Compile Include="Duoc\PhieuLinhF.Designer.cs">
+      <DependentUpon>PhieuLinhF.cs</DependentUpon>
     </Compile>
-    <Compile Include="PhieuTon.cs">
+    <Compile Include="Duoc\PhieuNhapF.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PhieuTon.Designer.cs">
-      <DependentUpon>PhieuTon.cs</DependentUpon>
+    <Compile Include="Duoc\PhieuNhapF.Designer.cs">
+      <DependentUpon>PhieuNhapF.cs</DependentUpon>
     </Compile>
-    <Compile Include="PhieuXuat.cs">
+    <Compile Include="PhieuTonF.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PhieuXuat.Designer.cs">
-      <DependentUpon>PhieuXuat.cs</DependentUpon>
+    <Compile Include="PhieuTonF.Designer.cs">
+      <DependentUpon>PhieuTonF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Duoc\PhieuXuatF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Duoc\PhieuXuatF.Designer.cs">
+      <DependentUpon>PhieuXuatF.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -135,11 +176,44 @@
     <EmbeddedResource Include="Admin\CRUDThuoc.resx">
       <DependentUpon>CRUDThuoc.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ChucNangF.resx">
+    <EmbeddedResource Include="CapNhatChiTietLinhF.resx">
+      <DependentUpon>CapNhatChiTietLinhF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Duoc\ChiTietNhapF.resx">
+      <DependentUpon>ChiTietNhapF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Duoc\ChiTietXuatF.resx">
+      <DependentUpon>ChiTietXuatF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChucNang\ChiTietLinhF.resx">
+      <DependentUpon>ChiTietLinhF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChucNang\ChucNangF.resx">
       <DependentUpon>ChucNangF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhSachThuocF.resx">
+      <DependentUpon>DanhSachThuocF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChucNang\GuiPhieuLinhF.resx">
+      <DependentUpon>GuiPhieuLinhF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Duoc\DuocF.resx">
+      <DependentUpon>DuocF.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Duoc\PhieuNhapF.resx">
+      <DependentUpon>PhieuNhapF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Duoc\PhieuLinhF.resx">
+      <DependentUpon>PhieuLinhF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PhieuTonF.resx">
+      <DependentUpon>PhieuTonF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Duoc\PhieuXuatF.resx">
+      <DependentUpon>PhieuXuatF.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

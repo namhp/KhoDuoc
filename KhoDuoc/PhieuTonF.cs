@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace KhoDuoc
 {
-    public partial class DuocF : Form
+    public partial class PhieuTonF : Form
     {
-        public DuocF()
+        public PhieuTonF()
         {
             InitializeComponent();
         }

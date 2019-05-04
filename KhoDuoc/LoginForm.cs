@@ -58,7 +58,7 @@ namespace KhoDuoc
             }
             else
             {
-                MessageBox.Show("error");
+                MessageBox.Show("Tài khoản hoặc mật khẩu chưa đúng, xin nhập lại");
             }
             con.Close();
 

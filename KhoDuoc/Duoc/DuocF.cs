@@ -38,7 +38,7 @@ namespace KhoDuoc
 
         private void button4_Click(object sender, EventArgs e)
         {
-            PhieuTonF f4 = new PhieuTonF();
+            PhieuKiemKeF f4 = new PhieuKiemKeF();
             f4.Show();
         }
 

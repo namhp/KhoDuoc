@@ -11,39 +11,21 @@ using System.Windows.Forms;
 
 namespace KhoDuoc
 {
-    public partial class CRUDNCC : Form
+    public partial class CapNhatChiTietLinhF : Form
     {
         SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-F1276L2\NAMEXPRESS;Initial Catalog=KhoDuoc;Integrated Security=True");
-        public CRUDNCC()
+
+        public CapNhatChiTietLinhF()
         {
             InitializeComponent();
         }
 
-        private void Button1_Click(object sender, EventArgs e)
+                public void disp_data()
         {
             con.Open();
             SqlCommand cmd = con.CreateCommand();
             cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "insert into nCungCap values('" + textBox1.Text + "','" + textBox2.Text + "','" + textBox3.Text + "','" + textBox7.Text + "','" + textBox4.Text + "','" + textBox5.Text + "','" + textBox6.Text + "')";
-            cmd.ExecuteNonQuery();
-            con.Close();
-            textBox1.Text = "";
-            textBox2.Text = "";
-            textBox3.Text = "";
-            textBox7.Text = "";
-            textBox4.Text = "";
-            textBox5.Text = "";
-            textBox6.Text = "";
-            disp_data();
-            MessageBox.Show("Thêm thành công");
-        }
-
-        public void disp_data()
-        {
-            con.Open();
-            SqlCommand cmd = con.CreateCommand();
-            cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "select * from nCungCap";
+            cmd.CommandText = "select * from chiTietLinh";
             cmd.ExecuteNonQuery();
             DataTable dt = new DataTable();
             SqlDataAdapter da = new SqlDataAdapter(cmd);
@@ -52,17 +34,12 @@ namespace KhoDuoc
             con.Close();
         }
 
-        private void CRUDNCC_Load(object sender, EventArgs e)
-        {
-            disp_data();
-        }
-
         private void Button2_Click(object sender, EventArgs e)
         {
             con.Open();
             SqlCommand cmd = con.CreateCommand();
             cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "update nCungCap set tenncc='" + textBox2.Text + "', sdt='" + textBox3.Text + "', fax='" + textBox4.Text + "', sotk='" + textBox5.Text + "', mst='" + textBox6.Text + "', diachi='" + textBox7.Text + "' where mancc='" + textBox1.Text + "'";
+            cmd.CommandText = "update thuoc set slc='" + textBox3.Text + "' where sophieu='" + textBox1.Text + "',mathuoc ='" + textBox2.Text + "'";
             cmd.ExecuteNonQuery();
             con.Close();
             disp_data();
@@ -74,7 +51,7 @@ namespace KhoDuoc
             con.Open();
             SqlCommand cmd = con.CreateCommand();
             cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "delete from nCungCap where mancc='" + textBox1.Text + "'";
+            cmd.CommandText = "delete from chiTietLinh where sophieu='" + textBox1.Text + "',mathuoc'" + textBox2.Text + "'";
             cmd.ExecuteNonQuery();
             con.Close();
             disp_data();
@@ -86,7 +63,7 @@ namespace KhoDuoc
             con.Open();
             SqlCommand cmd = con.CreateCommand();
             cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "select * from nCungCap where mancc='" + textBox1.Text + "' or tenncc ='" + textBox2.Text + "'";
+            cmd.CommandText = "select * from chiTietLinh where sophieu='" + textBox1.Text + "'";
             cmd.ExecuteNonQuery();
             DataTable dt = new DataTable();
             SqlDataAdapter da = new SqlDataAdapter(cmd);
@@ -98,6 +75,12 @@ namespace KhoDuoc
         private void Button5_Click(object sender, EventArgs e)
         {
             disp_data();
+        }
+
+        private void CapNhatChiTietLinhF_Load(object sender, EventArgs e)
+        {
+            disp_data();
+
         }
     }
 }

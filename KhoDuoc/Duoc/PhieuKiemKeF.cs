@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -10,19 +11,36 @@ using System.Windows.Forms;
 
 namespace KhoDuoc
 {
-    public partial class CapNhatChiTietLinhF : Form
+    public partial class PhieuKiemKeF : Form
     {
-        public CapNhatChiTietLinhF()
+        SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-F1276L2\NAMEXPRESS;Initial Catalog=KhoDuoc;Integrated Security=True");
+
+        public PhieuKiemKeF()
         {
             InitializeComponent();
         }
 
-                public void disp_data()
+        private void Button1_Click(object sender, EventArgs e)
         {
             con.Open();
             SqlCommand cmd = con.CreateCommand();
             cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "select * from chiTietLinh";
+            cmd.CommandText = "insert into phieuKiemKe values('" + textBox1.Text + "','" + textBox2.Text + "',,'" + textBox3.Text + "',,)";
+            cmd.ExecuteNonQuery();
+            con.Close();
+            textBox1.Text = "";
+            textBox2.Text = "";
+            textBox3.Text = "";
+            disp_data();
+            MessageBox.Show("Thêm thành công");
+        }
+
+        public void disp_data()
+        {
+            con.Open();
+            SqlCommand cmd = con.CreateCommand();
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "select * from phieuKiemKe";
             cmd.ExecuteNonQuery();
             DataTable dt = new DataTable();
             SqlDataAdapter da = new SqlDataAdapter(cmd);
@@ -36,7 +54,7 @@ namespace KhoDuoc
             con.Open();
             SqlCommand cmd = con.CreateCommand();
             cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "update thuoc set slc='" + textBox3.Text + "' where sophieu='" + textBox1.Text + "',mathuoc ='" + textBox2.Text + "'";
+            cmd.CommandText = "update phieuKiemKe set manv='" + textBox2.Text + "',ngay='"+textBox3.Text+"' where sophieu='" + textBox1.Text + "'";
             cmd.ExecuteNonQuery();
             con.Close();
             disp_data();
@@ -48,7 +66,7 @@ namespace KhoDuoc
             con.Open();
             SqlCommand cmd = con.CreateCommand();
             cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "delete from chiTietLinh where sophieu='" + textBox1.Text + "',mathuoc'" + textBox2.Text + "'";
+            cmd.CommandText = "delete from phieuKiemKe where sophieu='" + textBox1.Text + "'";
             cmd.ExecuteNonQuery();
             con.Close();
             disp_data();
@@ -60,7 +78,7 @@ namespace KhoDuoc
             con.Open();
             SqlCommand cmd = con.CreateCommand();
             cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "select * from thuoc where sophieu='" + textBox1.Text + "'";
+            cmd.CommandText = "select * from phieuKiemKe where sophieu ='" + textBox1.Text + "' ";
             cmd.ExecuteNonQuery();
             DataTable dt = new DataTable();
             SqlDataAdapter da = new SqlDataAdapter(cmd);
@@ -74,11 +92,15 @@ namespace KhoDuoc
             disp_data();
         }
 
-        private void CapNhatChiTietLinhF_Load(object sender, EventArgs e)
+        private void button6_Click(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'khoDuocDataSet.chiTietLinh' table. You can move, or remove it, as needed.
-            this.chiTietLinhTableAdapter.Fill(this.khoDuocDataSet.chiTietLinh);
+            ChiTietKiemKeF f = new ChiTietKiemKeF();
+            f.Show();
+        }
 
+        private void PhieuKiemKeF_Load(object sender, EventArgs e)
+        {
+            disp_data();
         }
     }
 }

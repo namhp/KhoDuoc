@@ -52,11 +52,17 @@
     <Compile Include="Admin\AdminF.Designer.cs">
       <DependentUpon>AdminF.cs</DependentUpon>
     </Compile>
-    <Compile Include="CapNhatChiTietLinhF.cs">
+    <Compile Include="Duoc\CapNhatChiTietLinhF.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CapNhatChiTietLinhF.Designer.cs">
+    <Compile Include="Duoc\CapNhatChiTietLinhF.Designer.cs">
       <DependentUpon>CapNhatChiTietLinhF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Duoc\ChiTietKiemKeF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Duoc\ChiTietKiemKeF.Designer.cs">
+      <DependentUpon>ChiTietKiemKeF.cs</DependentUpon>
     </Compile>
     <Compile Include="Duoc\ChiTietNhapF.cs">
       <SubType>Form</SubType>
@@ -147,11 +153,11 @@
     <Compile Include="Duoc\PhieuNhapF.Designer.cs">
       <DependentUpon>PhieuNhapF.cs</DependentUpon>
     </Compile>
-    <Compile Include="PhieuTonF.cs">
+    <Compile Include="Duoc\PhieuKiemKeF.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PhieuTonF.Designer.cs">
-      <DependentUpon>PhieuTonF.cs</DependentUpon>
+    <Compile Include="Duoc\PhieuKiemKeF.Designer.cs">
+      <DependentUpon>PhieuKiemKeF.cs</DependentUpon>
     </Compile>
     <Compile Include="Duoc\PhieuXuatF.cs">
       <SubType>Form</SubType>
@@ -176,7 +182,10 @@
     <EmbeddedResource Include="Admin\CRUDThuoc.resx">
       <DependentUpon>CRUDThuoc.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CapNhatChiTietLinhF.resx">
+    <EmbeddedResource Include="Duoc\ChiTietKiemKeF.resx">
+      <DependentUpon>ChiTietKiemKeF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Duoc\CapNhatChiTietLinhF.resx">
       <DependentUpon>CapNhatChiTietLinhF.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Duoc\ChiTietNhapF.resx">
@@ -209,8 +218,8 @@
     <EmbeddedResource Include="Duoc\PhieuLinhF.resx">
       <DependentUpon>PhieuLinhF.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PhieuTonF.resx">
-      <DependentUpon>PhieuTonF.cs</DependentUpon>
+    <EmbeddedResource Include="Duoc\PhieuKiemKeF.resx">
+      <DependentUpon>PhieuKiemKeF.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Duoc\PhieuXuatF.resx">
       <DependentUpon>PhieuXuatF.cs</DependentUpon>

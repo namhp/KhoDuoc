@@ -40,16 +40,16 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.khoDuocDataSet = new KhoDuoc.KhoDuocDataSet();
             this.chiTietLinhBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.khoDuocDataSet = new KhoDuoc.KhoDuocDataSet();
             this.chiTietLinhTableAdapter = new KhoDuoc.KhoDuocDataSetTableAdapters.chiTietLinhTableAdapter();
             this.sophieuDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.mathuocDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.slycDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.slpDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.khoDuocDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chiTietLinhBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.khoDuocDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // textBox3
@@ -167,15 +167,15 @@
             this.dataGridView1.Size = new System.Drawing.Size(597, 200);
             this.dataGridView1.TabIndex = 73;
             // 
-            // khoDuocDataSet
-            // 
-            this.khoDuocDataSet.DataSetName = "KhoDuocDataSet";
-            this.khoDuocDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // chiTietLinhBindingSource
             // 
             this.chiTietLinhBindingSource.DataMember = "chiTietLinh";
             this.chiTietLinhBindingSource.DataSource = this.khoDuocDataSet;
+            // 
+            // khoDuocDataSet
+            // 
+            this.khoDuocDataSet.DataSetName = "KhoDuocDataSet";
+            this.khoDuocDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // chiTietLinhTableAdapter
             // 
@@ -194,20 +194,23 @@
             this.mathuocDataGridViewTextBoxColumn.HeaderText = "Mã thuốc";
             this.mathuocDataGridViewTextBoxColumn.Name = "mathuocDataGridViewTextBoxColumn";
             this.mathuocDataGridViewTextBoxColumn.ReadOnly = true;
+            this.mathuocDataGridViewTextBoxColumn.Width = 150;
             // 
             // slycDataGridViewTextBoxColumn
             // 
             this.slycDataGridViewTextBoxColumn.DataPropertyName = "slyc";
-            this.slycDataGridViewTextBoxColumn.HeaderText = "slyc";
+            this.slycDataGridViewTextBoxColumn.HeaderText = "Số lượng yêu cầu";
             this.slycDataGridViewTextBoxColumn.Name = "slycDataGridViewTextBoxColumn";
             this.slycDataGridViewTextBoxColumn.ReadOnly = true;
+            this.slycDataGridViewTextBoxColumn.Width = 150;
             // 
             // slpDataGridViewTextBoxColumn
             // 
             this.slpDataGridViewTextBoxColumn.DataPropertyName = "slp";
-            this.slpDataGridViewTextBoxColumn.HeaderText = "slp";
+            this.slpDataGridViewTextBoxColumn.HeaderText = "Số lượng phát";
             this.slpDataGridViewTextBoxColumn.Name = "slpDataGridViewTextBoxColumn";
             this.slpDataGridViewTextBoxColumn.ReadOnly = true;
+            this.slpDataGridViewTextBoxColumn.Width = 150;
             // 
             // CapNhatChiTietLinhF
             // 
@@ -229,8 +232,8 @@
             this.Text = "CapNhatChiTietLinhF";
             this.Load += new System.EventHandler(this.CapNhatChiTietLinhF_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.khoDuocDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chiTietLinhBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.khoDuocDataSet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
